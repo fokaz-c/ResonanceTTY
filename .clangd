@@ -1,0 +1,33 @@
+CompileFlags:
+  Add:
+    - -Wall
+    - -Wextra
+    - -Icore/include
+  CompilationDatabase: .
+
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+  ClangTidy:
+    Add:
+      - readability-*
+      - bugprone-*
+      - performance-*
+    Remove:
+      - readability-braces-around-statements
+      - readability-magic-numbers
+      - readability-identifier-length
+
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
+
+Hover:
+  ShowAKA: Yes
+
+Completion:
+  AllScopes: Yes
+
+Index:
+  Background: Build
