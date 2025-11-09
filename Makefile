@@ -1,7 +1,7 @@
 # Compiler and flags
 CC       := gcc
 CFLAGS   := -Wall -Wextra -g -Icore/include
-LDFLAGS  :=
+LDFLAGS  := -lm
 TARGET   := build/renderer
 
 # Directories
